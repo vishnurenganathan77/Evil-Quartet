@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.USER"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="USER" Height="450" Width="800">
+    <Grid x:Name="label1">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" TextWrapping="Wrap" Text="HELLO USER" VerticalAlignment="Top" Width="153" FontFamily="Verdana" FontSize="16" Background="White"/>
+        <Label x:Name="label" Content="YOUR CREDENTIALS" HorizontalAlignment="Left" Height="35" Margin="10,46,0,0" VerticalAlignment="Top" Width="220" FontFamily="Verdana" FontSize="20"/>
+        <Button x:Name="button" Content="REGISTER" HorizontalAlignment="Left" Margin="295,17,0,0" VerticalAlignment="Top" Width="205" Height="64" FontFamily="Source Sans Pro Black" FontSize="36" Click="Button_Click"/>
+        <Label x:Name="label2" Content="USER-NAME:" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Height="37" Width="178" FontFamily="Trebuchet MS" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label2_Copy" Content="WIFI-SSID:" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Height="37" Width="178" FontFamily="Trebuchet MS" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label2_Copy1" Content="WIFI-PASSWORD:" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Height="37" Width="178" FontFamily="Trebuchet MS" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label2_Copy2" Content="Avg Speed (Mbps):" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Height="37" Width="178" FontFamily="Trebuchet MS" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Button x:Name="button_Copy" Content="UPDATE" HorizontalAlignment="Left" Margin="545,17,0,0" VerticalAlignment="Top" Width="205" Height="64" FontFamily="Source Sans Pro Black" FontSize="36" Click="Button_Copy_Click"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="35" Margin="214,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="401" FontFamily="Sitka Subheading" FontSize="18"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="35" Margin="214,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="401" FontFamily="Sitka Subheading" FontSize="18"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="35" Margin="214,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="401" FontFamily="Sitka Subheading" FontSize="18"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="35" Margin="214,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="401" FontFamily="Sitka Subheading" FontSize="18"/>
+        <Button x:Name="button1" Content="CONNECT TO WIFI" HorizontalAlignment="Left" Margin="126,344,0,0" VerticalAlignment="Top" Width="515" Height="54" FontFamily="Franklin Gothic Demi" FontSize="36" Click="Button1_Click"/>
+    </Grid>
+</Window>
