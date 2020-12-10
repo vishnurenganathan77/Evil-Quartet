@@ -72,10 +72,14 @@ namespace WpfApp1
             string ssid = textBox2.Text;
             string password = textBox3.Text;
             string speed = textBox4.Text;
+            var hasher = new SHA256Managed();
+            var unhashed = System.Text.Encoding.Unicode.GetBytes(password);
+            var hashed = hasher.ComputeHash(unhashed);
+            var hashedPassword = Convert.ToBase64String(hashed);
             String query = "INSERT INTO [dbo].[Credentials] (Username, WifiSsid, WifiPassword, WifiSpeed) VALUES (@un, @wsid, @wpass, @wspeed)";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.Add("@wsid", SqlDbType.NVarChar).Value = ssid;
-            cmd.Parameters.Add("@wpass", SqlDbType.NVarChar).Value = password;
+            cmd.Parameters.Add("@wpass", SqlDbType.NVarChar).Value = password; //hashedPassword; -> Use this for hashing the password (remove password).
             cmd.Parameters.Add("@wspeed", SqlDbType.NVarChar).Value = speed;
             cmd.Parameters.Add("@un", SqlDbType.NVarChar).Value = username;
             cmd.ExecuteNonQuery();
